@@ -1,0 +1,35 @@
+/* LogementCard.css */
+.logement__card {
+    position: relative;
+    overflow: hidden;
+    height: 255px;
+    border-radius: 20px;
+
+    .card__img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .logement__image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+  
+    .logement__details {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: white;
+      padding: 10px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  
+    .logement__title {
+        margin: 0;
+        font-size: 18px;
+        padding: 10px;
+      }
+    }
+}
