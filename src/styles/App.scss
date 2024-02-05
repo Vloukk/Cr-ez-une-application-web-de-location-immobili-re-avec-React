@@ -1,13 +1,14 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+
+@import "../styles/Base"; 
+@import "../styles/Variables"; 
+
 // Components
 @import "../styles/Components/Header"; 
 @import "../styles/Components/HeroBanner"; 
 @import "../styles/Components/Gallery"; 
 @import "../styles/Components/Card"; 
+@import "../styles/Components/Collapse"; 
 
-
-
-// Pages
-@import "../styles/Pages/Home";

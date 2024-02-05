@@ -1,0 +1,40 @@
+
+.collapse {
+    margin-top: 30px;
+  
+    &__header {
+      background-color: $primary-color;
+      margin: 0 auto;
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 5px;
+
+      @media (min-width: 940px) {
+        width: 80%;
+      }
+  
+      h3 {
+        margin: 0;
+        font-size: 24px;
+        color: $tertiary-color;
+      }
+  
+      span {
+        font-size: 24px;
+        color: $tertiary-color;
+        margin-right: 10px;
+      }
+    }
+  
+    &__content {
+      padding: 10px;
+
+      @media (min-width: 940px) {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
