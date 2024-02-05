@@ -2,13 +2,14 @@
 .logement__card {
     position: relative;
     overflow: hidden;
+    width: 100%;
     height: 255px;
     border-radius: 20px;
 
     .card__img {
-        width: 100%;
-        object-fit: cover;
-        height: 100%;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
     }
 
     .logement__image {

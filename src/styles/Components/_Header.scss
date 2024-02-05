@@ -1,7 +1,6 @@
 
 header {
-    width: 100%;
-    padding: 45px 45px 0px 45px;
+    margin: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +37,20 @@ header {
             a {
                 font-size: 24px;
             }
+        }
+    }
+  }
+
+  @media (max-width: 300px) {
+
+    nav, header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+
+
+        a {
+            font-size: 24px;
         }
     }
   }

@@ -1,0 +1,30 @@
+
+.Error__container {
+    margin: 22px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    .Error__title {
+        font-size: 288px;
+        color: $primary-color;
+        text-align: center;
+    }
+
+    .Error__text {
+        font-size: 36px;
+        color: $primary-color;
+    }
+
+    .Error__link {
+
+        font-size: 18px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
