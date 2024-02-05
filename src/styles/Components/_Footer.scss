@@ -1,0 +1,19 @@
+
+.Footer {
+    width: 100%;
+    height: 200px;
+    background-color: $footer-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__logo {
+        height: 40px;
+    }
+
+    &__copyright {
+        color: $tertiary-color;
+    }
+}

@@ -4,6 +4,7 @@ import HeroBanner from '../../components/Herobanner/HeroBanner';
 import imgAboutBanner from '../../assets/img/hero_banner_img_about.png'
 import Collapse from '../../components/Collapse/Collapse'
 import CollapseData from '../../datas/Collapse.json'
+import Footer from '../../components/Footer/Footer';
 
 function About() {
   return (
@@ -19,6 +20,7 @@ function About() {
           ))}
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
