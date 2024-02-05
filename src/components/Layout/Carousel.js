@@ -13,9 +13,9 @@ const Carousel = ({ images }) => {
   
     return (
       <div className="carousel">
-        <span className="prev" onClick={prevSlide}><i class="fa-solid fa-chevron-left"></i></span>
-        <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
-        <span className="next" onClick={nextSlide}><i class="fa-solid fa-chevron-right"></i></span>
+        <span className="prev" onClick={prevSlide}><i className="fa-solid fa-chevron-left"></i></span>
+        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+        <span className="next" onClick={nextSlide}><i className="fa-solid fa-chevron-right"></i></span>
       </div>
     );
   };

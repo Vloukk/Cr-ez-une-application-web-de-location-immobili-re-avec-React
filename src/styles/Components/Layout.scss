@@ -1,0 +1,53 @@
+
+.layout {
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+
+        h2 {
+            color: $primary-color;
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    &__tag {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    &__collapse {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid red;
+
+        @media (min-width: 940px) {
+
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__equipement {
+                width: 50%;
+            }
+    
+            &__description {
+                width: 50%;
+            }
+        }
+    }
+}

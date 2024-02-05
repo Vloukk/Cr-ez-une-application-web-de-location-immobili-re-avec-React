@@ -1,0 +1,16 @@
+
+/* Rate.css */
+.rate {
+  display: flex;
+  gap: 5px;
+  font-size: 13px;
+  }
+  
+  .fa-star {
+    color: $star-default; /* Couleur par défaut des étoiles */
+  }
+  
+  .etoile-rouge {
+    color: $primary-color; /* Couleur pour les étoiles rouges */
+  }
+  
