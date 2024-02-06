@@ -1,27 +1,41 @@
 
 .Error__container {
-    margin: 22px 22px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 50px;
+    padding: 60px;
 
     .Error__title {
-        font-size: 288px;
+        font-size: 96px;
         color: $primary-color;
         text-align: center;
+
+        @include desktop {
+            font-size: 288px;
+          }
     }
 
     .Error__text {
-        font-size: 36px;
+        font-size: 18px;
         color: $primary-color;
+        text-align: center;
+
+        @include desktop {
+            font-size: 36px;
+          }
     }
 
     .Error__link {
 
-        font-size: 18px;
+        font-size: 14px;
         text-decoration: none;
+        text-align: center;
+
+        @include desktop {
+            font-size: 18px;
+          }
 
         &:hover {
             text-decoration: underline;

@@ -42,11 +42,12 @@
             justify-content: space-between;
 
             &__equipement {
-                width: 50%;
+                width: 100%;
             }
     
-            &__description {
-                width: 50%;
+            .layout__collapse__description {
+                width: 100%;
+                background-color: red;
             }
         }
     }

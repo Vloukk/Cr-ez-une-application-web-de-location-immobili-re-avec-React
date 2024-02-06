@@ -1,14 +1,14 @@
 import logo from "../../assets/logo/logo.svg";
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
     <header>
       <img className="logo" src={logo} alt="logo de l'agence kasa" />
       <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/a-propos">À Propos</Link>
+        <NavLink to="/" activeClassName="active">Accueil</NavLink>
+        <NavLink to="/a-propos" activeClassName="active">À propos</NavLink>
       </nav>
     </header>
   );
