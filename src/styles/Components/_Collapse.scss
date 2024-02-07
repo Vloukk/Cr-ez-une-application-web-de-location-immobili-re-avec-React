@@ -22,12 +22,20 @@
         margin: 0;
         font-size: 24px;
         color: $tertiary-color;
+
+        @include inferieur {
+          font-size: 16px;
+        }
       }
   
       span {
         font-size: 24px;
         color: $tertiary-color;
         margin-right: 10px;
+
+        @include inferieur {
+          font-size: 16px;
+        }
       }
     }
   

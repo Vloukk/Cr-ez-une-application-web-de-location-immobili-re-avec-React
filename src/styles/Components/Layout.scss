@@ -27,6 +27,11 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 40px;
+
+        @include inferieur {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
     &__collapse {
@@ -34,9 +39,8 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        border: 1px solid red;
 
-        @media (min-width: 940px) {
+        @include desktop {
 
             flex-direction: row;
             justify-content: space-between;

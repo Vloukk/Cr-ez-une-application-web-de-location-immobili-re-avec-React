@@ -7,6 +7,12 @@ header {
     align-items: center;
     box-sizing: border-box;
 
+    @include inferieur {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+
     @include desktop {
         padding: 45px;
       }
@@ -19,6 +25,10 @@ header {
       display: flex;
       gap: 25px;
       font-family: 'Montserrat';
+
+      @include inferieur {
+        flex-direction: column;
+      }
 
       @include desktop {
           gap: 55px;

@@ -3,16 +3,30 @@
     align-items: center;
     gap: 15px;
 
+    @include inferieur {
+        flex-direction: column-reverse;
+      }
+
     &__name {
         width: 50px;
         display: flex;
         text-align: right;
         color: $primary-color;
         font-size: 12px;
+
+        @include inferieur {
+            justify-content: center;
+            text-align: center;
+            font-size: 16px;
+          }
     }
 
     &__img {
         width: 50px;
         border-radius: 50%;
+
+        @include inferieur {
+            width: 75px;
+          }
     }
 }

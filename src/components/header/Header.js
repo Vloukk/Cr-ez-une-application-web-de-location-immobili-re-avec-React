@@ -1,6 +1,6 @@
 import logo from "../../assets/logo/logo.svg";
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 
 function Header() {
 
@@ -8,7 +8,9 @@ function Header() {
   
   return (
     <header>
-      <img className="logo" src={logo} alt="logo de l'agence kasa" />
+      <Link to="/">
+        <img className="logo" src={logo} alt="logo de l'agence kasa" />
+      </Link>
       <nav>
         <NavLink to="/" className={location.pathname === "/" ? "active-link" : ""} >Accueil</NavLink>
         <NavLink to="/a-propos" className={location.pathname === "/a-propos" ? "active-link" : ""} >À propos</NavLink>
