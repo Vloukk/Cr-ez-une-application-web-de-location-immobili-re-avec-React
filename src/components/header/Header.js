@@ -1,14 +1,17 @@
 import logo from "../../assets/logo/logo.svg";
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 function Header() {
+
+  const location = useLocation();
+  
   return (
     <header>
       <img className="logo" src={logo} alt="logo de l'agence kasa" />
       <nav>
-        <NavLink to="/" activeClassName="active">Accueil</NavLink>
-        <NavLink to="/a-propos" activeClassName="active">À propos</NavLink>
+        <NavLink to="/" className={location.pathname === "/" ? "active-link" : ""} >Accueil</NavLink>
+        <NavLink to="/a-propos" className={location.pathname === "/a-propos" ? "active-link" : ""} >À propos</NavLink>
       </nav>
     </header>
   );
