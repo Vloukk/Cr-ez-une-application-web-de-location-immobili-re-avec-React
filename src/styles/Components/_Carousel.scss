@@ -31,4 +31,17 @@
           right: 16px; // Ajustez la position à droite selon vos besoins
         }
       }
+
+      .carousel__counter {
+        display: none;
+
+        @include desktop {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+        color: $tertiary-color;
+        font-size: 18px;
+        }
+      }
 }
