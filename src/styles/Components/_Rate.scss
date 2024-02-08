@@ -4,6 +4,11 @@
   display: flex;
   gap: 5px;
   font-size: 13px;
+
+  @include desktop {
+    font-size: 24px;
+  }
+
   }
   
   .fa-star {

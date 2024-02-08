@@ -36,18 +36,20 @@ const Layout = () => {
   
     return (
         <div className="layout">
-            <Carousel images={currentLogement.pictures} />
+          <Carousel images={currentLogement.pictures} />
+          <div className='layout__container'>
             <div className='layout__info'>
-              <h2>{currentLogement.title}</h2>
-              <p>{currentLogement.location}</p>
-              <div className='layout__tag'>{tagsLogement}</div>
-            </div>
-            <div className='layout__description'>
+                <h2>{currentLogement.title}</h2>
+                <p>{currentLogement.location}</p>
+                <div className='layout__tag'>{tagsLogement}</div>
+              </div>
+              <div className='layout__description'>
                 <div className='layout__rate'>{rateLogement}</div>
                 <div className='layout__host'>
-                    <div className='layout__host__name'>{hostName}</div>
-                    <img src={hostPicture} alt={hostName} className="layout__host__img" />
+                  <div className='layout__host__name'>{hostName}</div>
+                  <img src={hostPicture} alt={hostName} className="layout__host__img" />
                 </div>
+              </div>
             </div>
             <div className='layout__collapse'>
               {currentLogement && (
