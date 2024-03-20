@@ -15,7 +15,7 @@
       width: 100%;
 
       @include desktop {
-        width: 80%;
+        margin: 0;
       }
   
       h3 {
@@ -32,6 +32,11 @@
         font-size: 24px;
         color: $tertiary-color;
         margin-right: 10px;
+        transition: transform 0.5s ease; /* Définir la transition */
+
+        &.open {
+          transform: rotate(180deg); /* Rotation pour l'icône ouvert */
+        }
 
         @include inferieur {
           font-size: 16px;
@@ -40,11 +45,22 @@
     }
   
     &__content {
-      padding: 10px;
+      padding: 20px;
+      background-color: $secondary-color;
+      color: $primary-color;
+      font-size: 12px;
 
       @include desktop {
-        width: 80%;
-        margin: 0 auto;
+        font-size: 18px;
       }
+      
+      ul {
+        list-style: none;
+
+        li {
+          padding: 5px 0;
+        }
+      }
+     
     }
   }

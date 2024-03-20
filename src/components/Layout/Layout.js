@@ -6,8 +6,6 @@ import Tag from './Tag';
 import Rate from './Rate';
 import logementsData from '../../datas/logements.json';
 
-
-
 const Layout = () => {
     const { id } = useParams(); // Récupère l'id de l'URL
   
@@ -55,7 +53,7 @@ const Layout = () => {
               {currentLogement && (
                 <>
                   <Collapse title="Description" content={currentLogement.description} className='layout__collapse__description' />
-                  <Collapse title="Équipements" content={currentLogement.equipments.join(', ')} className='layout__collapse__equipement' />
+                  <Collapse title="Équipements" content={currentLogement.equipments} className='layout__collapse__equipement' />
                 </>
               )}
             </div>

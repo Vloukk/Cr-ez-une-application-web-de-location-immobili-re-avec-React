@@ -75,24 +75,13 @@
     }
 
     &__collapse {
-
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    width: 100%;
 
         @include desktop {
-
+            display: flex;
             flex-direction: row;
-            justify-content: space-between;
-
-            &__equipement {
-                width: 100%;
-            }
-    
-            .layout__collapse__description {
-                width: 100%;
-                background-color: red;
-            }
+            align-items: space-between;
+            gap: 50px;
         }
     }
 }
